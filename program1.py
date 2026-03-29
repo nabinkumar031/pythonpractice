@@ -58,6 +58,7 @@ else:
 Loop
 '''
 
+'''
 n=int(input("Enter a Number: "))
 
 total = 0
@@ -66,3 +67,32 @@ for i in range(1,n+1):
     total = total + i
 
 print(f"sum = {total}")
+'''
+
+''' string looping'''
+
+'''
+word=input("Enter a word: ")
+totalVowels=0
+for ch in word:
+    if ch.lower() in "aeiou":
+        totalVowels=totalVowels+1
+    
+print(f"TotalVowel is {totalVowels}")
+'''
+
+'''Largest of three numbers'''
+'''
+number1=int(input("Enter First number:"))
+number2=int(input("Enter Second number:"))
+number3=int(input("Enter Third number:"))
+
+if number1> number2 and number1> number3:
+    print(f"Number1 {number1} is the largest number")
+elif number2> number1 and number2> number3:
+    print(f"Number2 {number2} is the largest number")
+else:
+    print(f"Number3 {number3} is the largest number")
+'''
+
+'''Password Checker '''
