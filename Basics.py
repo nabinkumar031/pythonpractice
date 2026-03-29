@@ -96,3 +96,43 @@ else:
 '''
 
 '''Password Checker '''
+
+'''
+password=input("Enter a password ")
+
+rule1=False
+rule2=False
+
+if len(password)>7:
+    rule2=True
+
+for ch in password:
+    if ch.isdigit():
+        rule1=True
+
+if rule1 and rule2:
+    print("Strong Password")
+else:
+    print("Weak Password")
+
+'''
+
+'''Number Guessing'''
+
+guessNum=int(input("Guess a number:"))
+
+secretNumber=77
+
+while True:
+    diff= guessNum - secretNumber
+    if diff < 0:
+        print("Greater")
+        guessNum=int(input("Guess again:"))
+    elif diff > 0:
+        print("Smaller")
+        guessNum=int(input("Guess again:"))
+    else:
+        print ("Correct")
+        break
+
+
