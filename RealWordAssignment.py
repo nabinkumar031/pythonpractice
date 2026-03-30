@@ -47,7 +47,7 @@ if attendencePercentage < 75.0:
 '''Expense Tracker (Mini)'''
 
 
-
+'''
 def enterAllExpenses():
     expenses=[]
     while True:
@@ -79,5 +79,32 @@ def lowestExpense(expenses):
 enteredExpenses= enterAllExpenses()
 print(f"highest expense: {highestExpense(enteredExpenses)}")
 print(f"lowest expense: {lowestExpense(enteredExpenses)}")
-        
+'''
+
+'''Word Counter'''
+'''
+sentence=input("Enter a sentence: ")
+wordCount=0
+for word in sentence.split():
+    wordCount+=1
+print(f"Total words={wordCount}")
+
+wordCount=sentence.split(",")
+print(f"Total words={len(wordCount)}")
+
+'''
+
+'''Palindrome Checker'''
+
+def isPalindrome(word):
+    word=word.lower()
+    return word == word[::-1]
+
+
+word=input("Enter a word: ")
+if isPalindrome(word):
+    print(f"{word} is a palindrome")
+else:
+    print(f"{word} is not a palindrome")
+
 
